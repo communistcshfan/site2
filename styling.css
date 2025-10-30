@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Hahmlet:wght@100..900&display=swap');
+
+body{
+    background-color: #000010;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    border: 3px, solid #cd2727;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 15px;
+}
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.text{
+    width: 1000px;
+
+}
+h3{
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #fff5eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    background: linear-gradient(90deg, #cf0202 0%, #e87929 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colors 5s alternate infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    transition: font-size 2s;
+}
+@keyframes colors {
+    0% {
+        filter: hue-rotate(279deg);
+    }
+    50% {
+        filter: hue-rotate(197deg);
+    }
+    100% {
+        filter: hue-rotate(12deg);
+    }
+}
+p{
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: 90;
+    font-style: normal;
+    font-size: 17px;
+    color: #fff5eb;
+}
+a{
+    position: relative;
+    cursor: pointer;
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: 90;
+    font-style: normal;
+    font-size: 25px;
+    color: #fff5eb;
+    transition: color 0.25s, font-size 0.25s;
+}
+a::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: white;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 15px;
+}
+a:hover{
+    color: black;
+    font-size: 30px;
+}
+a:hover::after{
+    scale: 1 1;
+}
+.logo{
+    width: 180px;
+    height: 70px;
+    border: 3px, solid #cd2727;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    transition: width 0.25s, height 0.25s;
+}
+.logo:hover{
+    width: 200px;
+    height: 80px;
+}
+.cshphoto{
+    width: 400px;
+    height: 300px;
+    margin-top: 80px;
+    border: 3px, solid #cd2727;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 20%;
+    transition: width 0.5s, height 0.5s;
+}
+@keyframes example {
+    0% {border-color:#cd2727;}
+    10%{border-color:#d53b2d;}
+    20%{border-color:#e87929;}
+    30%{border-color:#fbb23e;}
+    40%{border-color:#5ed536;}
+    50%{border-color:#41ca91;}
+    60%{border-color:#2152f1;}
+    70%{border-color:#432fd8;}
+    80%{border-color:#c423c4;}
+    90%{border-color:#cd2743;}
+    100%{border-color:#cd2727;}
+}
+.cabecalho-menu{
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.cshfy {
+    border: 3px, solid #cd2727;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 40%;
+}
